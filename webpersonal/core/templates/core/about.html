@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+
+{% block tittle %} Acerca de {% endblock %}
+
+{% block background%}{% load static %}{% static 'core/img/about-bg.jpg' %}{%endblock%}
+
+{% block headers%}
+    <h1>Acerca de</h1>
+    <span class="subheading">Sabe más sobre mí</span>
+{% endblock %}
+
+{% block content %}  
+
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}%}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Emilio Blanco</h2>   
+        <p>Programador de diseño, desarrollo y mantenimiento de aplicaciones software. Manejo de lenguajes de programación Java, JavaScript, SQL... 
+            Excelente capacidad para resolver problemas, atención a los detalles y habilidades de gestión de tiempo para cumplir los plazos previstos, 
+            así como una gran capacidad demostrada de dirección y coordinación de equipos. 
+            En lo personal, me considero una persona creativa, curiosa, con ganas de aprender y mejorar y un apasionado de su trabajo.</p>
+    </div>
+</div>
+{% endblock %}
+
